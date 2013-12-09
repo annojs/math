@@ -1,0 +1,40 @@
+{
+  "name": "annomath",
+  "description": "Annotated math utilities for JavaScript",
+  "author": "Juho Vepsalainen <bebraw@gmail.com>",
+  "version": "0.1.0",
+  "dependencies": {
+    "annois": "0.3.0",
+    "annotate": "0.7.0",
+    "require-dir": "0.1.0"
+  },
+  "devDependencies": {
+    "annogenerate": "0.6.2",
+    "annofuzz": "0.3.2"
+  },
+  "scripts": {
+    "test": "node ./tests"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:annojs/math.git"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "homepage": "https://github.com/annojs/math",
+  "bugs": {
+    "url": "https://github.com/annojs/math/issues"
+  },
+  "keywords": [
+    "math",
+    "utilities"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/annojs/math/blob/master/LICENSE"
+    }
+  ]
+}
