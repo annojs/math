@@ -1,4 +1,15 @@
 var generate = require('annogenerate');
+
+generate.greaterThanZero = function() {
+    return generate.number(0);
+};
+generate.largerThanMin = function() {
+    return generate.number(this.args[1]);
+};
+generate.betweenOnes = function() {
+    return generate.number(-1, 1);
+}
+
 var fuzz = require('annofuzz')(generate);
 var is = require('annois');
 
@@ -12,7 +23,6 @@ function execute() {
         var test = tests[name];
         var module = require('../')[name];
 
-        fuzz._amount = 100;
-        fuzz(module, test);
+        fuzz(module, test, 100);
     });
 }
