@@ -1,3 +1,6 @@
+'use strict';
+
+
 var generate = require('annogenerate');
 
 generate.greaterThanZero = function() {
@@ -14,10 +17,9 @@ generate.largerThanMin2 = function() {
 
 generate.betweenOnes = function() {
     return generate.number(-1, 1);
-}
+};
 
 var fuzz = require('annofuzz')(generate);
-var is = require('annois');
 
 
 module.exports = execute();
